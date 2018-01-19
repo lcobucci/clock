@@ -18,6 +18,11 @@ final class FrozenClock implements Clock
         $this->now = $now;
     }
 
+    public function setTo(DateTimeImmutable $now): void
+    {
+        $this->now = $now;
+    }
+
     public function now(): DateTimeImmutable
     {
         return $this->now;
