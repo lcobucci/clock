@@ -22,7 +22,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Lcobucci\\Clock\\": "src"
+            "Lcobucci\\Clock\\": "test"
         }
     },
     "config": {
