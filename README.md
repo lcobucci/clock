@@ -25,9 +25,7 @@ composer require lcobucci/clock
 
 ## Basic usage
 
-Simply create an make your objects dependent on the 
-interface `Lcobucci\Clock\Clock` and use `SystemClock` or
-`FrozenClock` to retrieve the current time:
+Simply have your objects depend on the `Lcobucci\Clock\Clock` interface and use `SystemClock` or `FrozenClock` to retrieve the current time or a specific time (for testing), respectively:
 
 ```php
 <?php
