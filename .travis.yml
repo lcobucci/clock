@@ -39,3 +39,11 @@ jobs:
       env: CODE_STANDARD
       script:
       - ./vendor/bin/phpcs
+
+    - stage: Metrics and quality
+      env: MUTATION
+      before_script:
+        - mv ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini{.disabled,}
+        - if [[ ! $(php -m | grep -si xdebug) ]]; then echo "xdebug required for coverage"; exit 1; fi
+      script:
+        - ./vendor/bin/infection -s --threads=4 --min-msi=100 --min-covered-msi=100

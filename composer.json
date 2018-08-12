@@ -13,6 +13,7 @@
         "php": "^7.2"
     },
     "require-dev": {
+        "infection/infection": "^0.10",
         "lcobucci/coding-standard": "^1.0",
         "phpunit/phpunit": "^7.3"
     },
