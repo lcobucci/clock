@@ -1,22 +1,54 @@
+dist: trusty
 language: php
 sudo: false
 
 php:
-  - 7.1
+  - 7.2
   - nightly
 
 cache:
   directories:
     - $HOME/.composer/cache
 
-before_script:
-  - if [[ $TRAVIS_PHP_VERSION = '7.1' ]]; then PHPUNIT_FLAGS="--coverage-clover ./clover.xml"; else PHPUNIT_FLAGS=""; fi
+before_install:
+  - mv ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini{,.disabled} || echo "xdebug not available"
   - composer self-update
-  - composer install
+
+install: travis_retry composer install
 
 script:
-  - ./vendor/bin/phpunit $PHPUNIT_FLAGS
+  - ./vendor/bin/phpunit
 
-after_script:
-  - wget https://scrutinizer-ci.com/ocular.phar
-  - if [ -f clover.xml ]; then php ocular.phar code-coverage:upload --format=php-clover ./clover.xml; fi
+jobs:
+  allow_failures:
+    - php: nightly
+
+  include:
+    - stage: Metrics and quality
+      env: COVERAGE
+      before_script:
+        - mv ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini{.disabled,}
+        - if [[ ! $(php -m | grep -si xdebug) ]]; then echo "xdebug required for coverage"; exit 1; fi
+      script:
+        - ./vendor/bin/phpunit --coverage-clover ./clover.xml
+      after_script:
+        - wget https://scrutinizer-ci.com/ocular.phar
+        - php ocular.phar code-coverage:upload --format=php-clover ./clover.xml
+
+    - stage: Metrics and quality
+      env: CODE_STANDARD
+      script:
+      - ./vendor/bin/phpcs
+
+    - stage: Metrics and quality
+      env: MUTATION
+      before_script:
+        - mv ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini{.disabled,}
+        - if [[ ! $(php -m | grep -si xdebug) ]]; then echo "xdebug required for coverage"; exit 1; fi
+      script:
+        - ./vendor/bin/infection -s --threads=4 --min-msi=100 --min-covered-msi=100
+
+    - stage: Metrics and quality
+      env: STATIC_ANALYSIS
+      script:
+        - ./vendor/bin/phpstan analyse

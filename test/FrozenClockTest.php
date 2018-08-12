@@ -1,5 +1,4 @@
 <?php
-
 declare(strict_types=1);
 
 namespace Lcobucci\Clock;
@@ -15,7 +14,7 @@ final class FrozenClockTest extends TestCase
      * @covers \Lcobucci\Clock\FrozenClock::__construct
      * @covers \Lcobucci\Clock\FrozenClock::now
      */
-    public function nowShouldReturnAlwaysTheSameObject()
+    public function nowShouldReturnAlwaysTheSameObject(): void
     {
         $now   = new DateTimeImmutable();
         $clock = new FrozenClock($now);
@@ -31,7 +30,7 @@ final class FrozenClockTest extends TestCase
      * @uses   \Lcobucci\Clock\FrozenClock::__construct()
      * @uses   \Lcobucci\Clock\FrozenClock::now
      */
-    public function nowSetChangesTheObject()
+    public function nowSetChangesTheObject(): void
     {
         $oldNow = new DateTimeImmutable();
         $clock  = new FrozenClock($oldNow);
