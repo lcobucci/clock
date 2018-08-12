@@ -47,3 +47,8 @@ jobs:
         - if [[ ! $(php -m | grep -si xdebug) ]]; then echo "xdebug required for coverage"; exit 1; fi
       script:
         - ./vendor/bin/infection -s --threads=4 --min-msi=100 --min-covered-msi=100
+
+    - stage: Metrics and quality
+      env: STATIC_ANALYSIS
+      script:
+        - ./vendor/bin/phpstan analyse
