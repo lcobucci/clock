@@ -1,11 +1,11 @@
 <?php
-
 declare(strict_types=1);
 
 namespace Lcobucci\Clock;
 
 use DateTimeImmutable;
 use DateTimeZone;
+use function date_default_timezone_get;
 
 final class SystemClock implements Clock
 {
@@ -14,7 +14,7 @@ final class SystemClock implements Clock
      */
     private $timezone;
 
-    public function __construct(DateTimeZone $timezone = null)
+    public function __construct(?DateTimeZone $timezone = null)
     {
         $this->timezone = $timezone ?: new DateTimeZone(date_default_timezone_get());
     }

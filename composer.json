@@ -13,6 +13,7 @@
         "php": "^7.2"
     },
     "require-dev": {
+        "lcobucci/coding-standard": "^1.0",
         "phpunit/phpunit": "^6.1"
     },
     "autoload": {
