@@ -16,7 +16,7 @@ final class SystemClockTest extends TestCase
      */
     public function constructShouldUseSystemDefaultTimezoneIfNoneWasProvided(): void
     {
-        self::assertAttributeEquals(new DateTimeZone('UTC'), 'timezone', new SystemClock());
+        self::assertEquals(new SystemClock(new DateTimeZone('UTC')), new SystemClock());
     }
 
     /**
