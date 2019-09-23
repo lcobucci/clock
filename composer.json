@@ -13,7 +13,7 @@
         "php": "^7.2"
     },
     "require-dev": {
-        "infection/infection": "^0.10",
+        "infection/infection": "^0.13",
         "lcobucci/coding-standard": "^1.0",
         "phpstan/phpstan": "^0.10",
         "phpstan/phpstan-deprecation-rules": "^0.10",
