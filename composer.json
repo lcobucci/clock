@@ -14,7 +14,7 @@
     },
     "require-dev": {
         "infection/infection": "^0.13",
-        "lcobucci/coding-standard": "^1.0",
+        "lcobucci/coding-standard": "^2.0",
         "phpstan/phpstan": "^0.10",
         "phpstan/phpstan-deprecation-rules": "^0.10",
         "phpstan/phpstan-phpunit": "^0.10",
