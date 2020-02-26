@@ -16,7 +16,7 @@ final class SystemClock implements Clock
 
     public function __construct(?DateTimeZone $timezone = null)
     {
-        $this->timezone = $timezone ?: new DateTimeZone(date_default_timezone_get());
+        $this->timezone = $timezone ?? new DateTimeZone(date_default_timezone_get());
     }
 
     public function now(): DateTimeImmutable
