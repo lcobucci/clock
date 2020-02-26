@@ -9,14 +9,11 @@ use function date_default_timezone_get;
 
 final class SystemClock implements Clock
 {
-    /**
-     * @var DateTimeZone
-     */
-    private $timezone;
+    private DateTimeZone $timezone;
 
     public function __construct(?DateTimeZone $timezone = null)
     {
-        $this->timezone = $timezone ?: new DateTimeZone(date_default_timezone_get());
+        $this->timezone = $timezone ?? new DateTimeZone(date_default_timezone_get());
     }
 
     public function now(): DateTimeImmutable

@@ -27,6 +27,7 @@ final class FrozenClockTest extends TestCase
      * @test
      *
      * @covers \Lcobucci\Clock\FrozenClock::setTo
+     *
      * @uses   \Lcobucci\Clock\FrozenClock::__construct()
      * @uses   \Lcobucci\Clock\FrozenClock::now
      */

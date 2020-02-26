@@ -5,3 +5,4 @@
 /.phpcs.cache
 /infection-log.txt
 /phpstan.neon
+/.phpunit.result.cache
