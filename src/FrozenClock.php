@@ -9,9 +9,9 @@ final class FrozenClock implements Clock
 {
     private DateTimeImmutable $now;
 
-    public function __construct(DateTimeImmutable $now)
+    public function __construct(DateTimeImmutable $now = null)
     {
-        $this->now = $now;
+        $this->now = $now ?? new DateTimeImmutable();
     }
 
     public function setTo(DateTimeImmutable $now): void
