@@ -43,20 +43,20 @@ final class FrozenClockTest extends TestCase
         self::assertSame($newNow, $clock->now());
     }
 
-	/**
-	 * @test
-	 *
-	 * @covers \Lcobucci\Clock\FrozenClock::__construct
-	 *
-	 * @uses   \Lcobucci\Clock\FrozenClock::now
-	 */
+    /**
+     * @test
+     *
+     * @covers \Lcobucci\Clock\FrozenClock::__construct
+     *
+     * @uses   \Lcobucci\Clock\FrozenClock::now
+     */
     public function defaultClockShouldReturnCurrentDateTime(): void
-	{
-		$lower = new DateTimeImmutable();
-		$clock = new FrozenClock();
-		$upper = new DateTimeImmutable();
+    {
+        $lower = new DateTimeImmutable();
+        $clock = new FrozenClock();
+        $upper = new DateTimeImmutable();
 
-		self::assertGreaterThanOrEqual($lower, $clock->now());
-		self::assertLessThanOrEqual($upper, $clock->now());
-	}
+        self::assertGreaterThanOrEqual($lower, $clock->now());
+        self::assertLessThanOrEqual($upper, $clock->now());
+    }
 }
