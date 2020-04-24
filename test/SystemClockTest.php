@@ -6,6 +6,7 @@ namespace Lcobucci\Clock;
 use DateTimeImmutable;
 use DateTimeZone;
 use PHPUnit\Framework\TestCase;
+use function date_default_timezone_get;
 
 final class SystemClockTest extends TestCase
 {
@@ -16,7 +17,7 @@ final class SystemClockTest extends TestCase
      */
     public function constructShouldUseSystemDefaultTimezoneIfNoneWasProvided(): void
     {
-        self::assertEquals(new SystemClock(new DateTimeZone('UTC')), new SystemClock());
+        self::assertEquals(new SystemClock(new DateTimeZone(date_default_timezone_get())), new SystemClock());
     }
 
     /**
