@@ -1,7 +1,6 @@
 /vendor
 /phpunit.xml
 /phpcs.xml
-/composer.lock
 /.phpcs.cache
 /infection-log.txt
 /phpstan.neon

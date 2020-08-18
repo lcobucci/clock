@@ -1,6 +1,6 @@
-dist: trusty
+os: linux
+dist: focal
 language: php
-sudo: false
 
 php:
   - 7.4
