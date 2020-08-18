@@ -5,3 +5,4 @@
 /.travis.yml      export-ignore
 /README.md        export-ignore
 /*.xml.dist       export-ignore
+/composer.lock    export-ignore
