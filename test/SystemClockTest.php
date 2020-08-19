@@ -6,6 +6,7 @@ namespace Lcobucci\Clock;
 use DateTimeImmutable;
 use DateTimeZone;
 use PHPUnit\Framework\TestCase;
+
 use function date_default_timezone_get;
 
 final class SystemClockTest extends TestCase
