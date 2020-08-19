@@ -13,7 +13,7 @@
         "php": "^7.4 || ^8.0"
     },
     "require-dev": {
-        "infection/infection": "^0.16",
+        "infection/infection": "^0.17",
         "lcobucci/coding-standard": "^6.0",
         "phpstan/extension-installer": "^1.0",
         "phpstan/phpstan": "^0.12",
