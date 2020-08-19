@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c25711555a209cf6e40a632ed74c9d6f",
+    "content-hash": "4f9f4b3c0a75cc9bce5fe8ac1a71cd7d",
     "packages": [],
     "packages-dev": [
         {
@@ -392,16 +392,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.16.6",
+            "version": "0.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "d43267a15ae21d42fce2aed3f1c8a4a22de6698a"
+                "reference": "201c8ea39a3748552bfadb109ca3bc41f3259cd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/d43267a15ae21d42fce2aed3f1c8a4a22de6698a",
-                "reference": "d43267a15ae21d42fce2aed3f1c8a4a22de6698a",
+                "url": "https://api.github.com/repos/infection/infection/zipball/201c8ea39a3748552bfadb109ca3bc41f3259cd2",
+                "reference": "201c8ea39a3748552bfadb109ca3bc41f3259cd2",
                 "shasum": ""
             },
             "require": {
@@ -411,13 +411,13 @@
                 "ext-libxml": "*",
                 "infection/abstract-testframework-adapter": "^0.3.0",
                 "infection/extension-installer": "^0.1.0",
-                "infection/include-interceptor": "^0.2.2",
+                "infection/include-interceptor": "^0.2.4",
                 "justinrainbow/json-schema": "^5.2",
                 "nikic/php-parser": "^4.2.2",
                 "ocramius/package-versions": "^1.2",
                 "ondram/ci-detector": "^3.3.0",
                 "php": "^7.3",
-                "sanmai/pipeline": "^3.1",
+                "sanmai/pipeline": "^3.1 || ^5.0",
                 "sebastian/diff": "^3.0.2 || ^4.0",
                 "seld/jsonlint": "^1.7",
                 "symfony/console": "^3.4.29 || ^4.0 || ^5.0",
@@ -496,7 +496,7 @@
                 "testing",
                 "unit testing"
             ],
-            "time": "2020-08-17T20:17:03+00:00"
+            "time": "2020-08-18T06:02:37+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -1947,39 +1947,32 @@
         },
         {
             "name": "sanmai/pipeline",
-            "version": "v3.1.2",
+            "version": "v5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sanmai/pipeline.git",
-                "reference": "12a7402b97d945587a6a8c291a0040369a83fcf6"
+                "reference": "5c4f3c693915a77b194a6b7a90834c799e0713b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sanmai/pipeline/zipball/12a7402b97d945587a6a8c291a0040369a83fcf6",
-                "reference": "12a7402b97d945587a6a8c291a0040369a83fcf6",
+                "url": "https://api.github.com/repos/sanmai/pipeline/zipball/5c4f3c693915a77b194a6b7a90834c799e0713b7",
+                "reference": "5c4f3c693915a77b194a6b7a90834c799e0713b7",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1"
+                "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "codacy/coverage": "^1.4",
                 "friendsofphp/php-cs-fixer": "^2.13",
                 "infection/infection": ">=0.10.5",
                 "league/pipeline": "^1.0 || ^0.3",
-                "mockery/mockery": "^1.0",
                 "phan/phan": "^1.1 || ^2.0",
                 "php-coveralls/php-coveralls": "^2.0",
                 "phpstan/phpstan": ">=0.10",
-                "phpunit/phpunit": "^7.4 || ^8.1",
+                "phpunit/phpunit": "^7.4 || ^8.1 || ^9.0",
                 "vimeo/psalm": "^2.0 || ^3.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Pipeline\\": "src/"
@@ -1999,7 +1992,7 @@
                 }
             ],
             "description": "General-purpose collections pipeline",
-            "time": "2020-01-26T21:22:49+00:00"
+            "time": "2020-07-18T02:54:43+00:00"
         },
         {
             "name": "sebastian/code-unit",
