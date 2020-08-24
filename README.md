@@ -11,21 +11,19 @@
 
 Yet another clock abstraction...
 
-The purpose is to decouple projects from `DateTimeImmutable` instantiation so that
-we can test things properly.
+The purpose is to decouple projects from `DateTimeImmutable` instantiation so that we can test things properly.
 
 ## Installation
 
-Package is available on [Packagist](http://packagist.org/packages/lcobucci/clock),
-you can install it using [Composer](http://getcomposer.org).
+Package is available on [Packagist](http://packagist.org/packages/lcobucci/clock), you can install it using [Composer](http://getcomposer.org).
 
 ```shell
 composer require lcobucci/clock
 ```
 
-## Basic usage
+## Usage
 
-Simply have your objects depend on the `Lcobucci\Clock\Clock` interface and use `SystemClock` or `FrozenClock` to retrieve the current time or a specific time (for testing), respectively:
+Make your objects depend on the `Lcobucci\Clock\Clock` interface and use `SystemClock` or `FrozenClock` to retrieve the current time or a specific time (for testing), respectively:
 
 ```php
 <?php
