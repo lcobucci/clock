@@ -9,17 +9,20 @@
     beStrictAboutChangesToGlobalState="true"
     beStrictAboutCoversAnnotation="true"
     beStrictAboutResourceUsageDuringSmallTests="true"
-    forceCoversAnnotation="true">
-
+    forceCoversAnnotation="true"
+    executionOrder="random"
+    failOnRisky="true"
+    failOnWarning="true"
+>
     <php>
         <ini name="date.timezone" value="UTC" />
     </php>
 
-	<testsuites>
-		<testsuite name="unit">
-			<directory>test</directory>
-		</testsuite>
-	</testsuites>
+    <testsuites>
+        <testsuite name="unit">
+            <directory>test</directory>
+        </testsuite>
+    </testsuites>
 
     <coverage processUncoveredFiles="true">
         <include>
