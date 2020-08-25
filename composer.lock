@@ -768,16 +768,16 @@
         },
         {
             "name": "ondram/ci-detector",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OndraM/ci-detector.git",
-                "reference": "0babf1cb71984f652498c6327a47d0081cd1e01b"
+                "reference": "789e9fcc7a8c3ef6d54f645fef744ad35946e896"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OndraM/ci-detector/zipball/0babf1cb71984f652498c6327a47d0081cd1e01b",
-                "reference": "0babf1cb71984f652498c6327a47d0081cd1e01b",
+                "url": "https://api.github.com/repos/OndraM/ci-detector/zipball/789e9fcc7a8c3ef6d54f645fef744ad35946e896",
+                "reference": "789e9fcc7a8c3ef6d54f645fef744ad35946e896",
                 "shasum": ""
             },
             "require": {
@@ -813,6 +813,7 @@
             "keywords": [
                 "CircleCI",
                 "Codeship",
+                "Wercker",
                 "adapter",
                 "appveyor",
                 "aws",
@@ -820,6 +821,7 @@
                 "bamboo",
                 "bitbucket",
                 "buddy",
+                "ci-info",
                 "codebuild",
                 "continuous integration",
                 "continuousphp",
@@ -831,7 +833,7 @@
                 "teamcity",
                 "travis"
             ],
-            "time": "2020-05-11T19:24:44+00:00"
+            "time": "2020-08-25T11:58:23+00:00"
         },
         {
             "name": "phar-io/manifest",
