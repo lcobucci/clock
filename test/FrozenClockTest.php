@@ -6,13 +6,14 @@ namespace Lcobucci\Clock;
 use DateTimeImmutable;
 use PHPUnit\Framework\TestCase;
 
+/** @coversDefaultClass \Lcobucci\Clock\FrozenClock */
 final class FrozenClockTest extends TestCase
 {
     /**
      * @test
      *
-     * @covers \Lcobucci\Clock\FrozenClock::__construct
-     * @covers \Lcobucci\Clock\FrozenClock::now
+     * @covers ::__construct
+     * @covers ::now
      */
     public function nowShouldReturnAlwaysTheSameObject(): void
     {
@@ -26,7 +27,7 @@ final class FrozenClockTest extends TestCase
     /**
      * @test
      *
-     * @covers \Lcobucci\Clock\FrozenClock::setTo
+     * @covers ::setTo
      *
      * @uses   \Lcobucci\Clock\FrozenClock::__construct()
      * @uses   \Lcobucci\Clock\FrozenClock::now
@@ -46,8 +47,8 @@ final class FrozenClockTest extends TestCase
     /**
      * @test
      *
-     * @covers \Lcobucci\Clock\FrozenClock::fromUTC
-     * @covers \Lcobucci\Clock\FrozenClock::__construct
+     * @covers ::fromUTC
+     * @covers ::__construct
      *
      * @uses \Lcobucci\Clock\FrozenClock::now
      */

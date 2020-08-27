@@ -9,12 +9,13 @@ use PHPUnit\Framework\TestCase;
 
 use function date_default_timezone_get;
 
+/** @coversDefaultClass \Lcobucci\Clock\SystemClock */
 final class SystemClockTest extends TestCase
 {
     /**
      * @test
      *
-     * @covers \Lcobucci\Clock\SystemClock::__construct
+     * @covers ::__construct
      */
     public function constructShouldUseSystemDefaultTimezoneIfNoneWasProvided(): void
     {
@@ -24,8 +25,8 @@ final class SystemClockTest extends TestCase
     /**
      * @test
      *
-     * @covers \Lcobucci\Clock\SystemClock::__construct
-     * @covers \Lcobucci\Clock\SystemClock::now
+     * @covers ::__construct
+     * @covers ::now
      */
     public function nowShouldRespectTheProvidedTimezone(): void
     {
@@ -44,8 +45,8 @@ final class SystemClockTest extends TestCase
     /**
      * @test
      *
-     * @covers \Lcobucci\Clock\SystemClock::fromUTC
-     * @covers \Lcobucci\Clock\SystemClock::__construct
+     * @covers ::fromUTC
+     * @covers ::__construct
      *
      * @uses \Lcobucci\Clock\SystemClock::now
      */
@@ -60,8 +61,8 @@ final class SystemClockTest extends TestCase
     /**
      * @test
      *
-     * @covers \Lcobucci\Clock\SystemClock::fromSystemTimezone
-     * @covers \Lcobucci\Clock\SystemClock::__construct
+     * @covers ::fromSystemTimezone
+     * @covers ::__construct
      *
      * @uses \Lcobucci\Clock\SystemClock::now
      */
