@@ -16,16 +16,6 @@ final class SystemClockTest extends TestCase
      * @test
      *
      * @covers ::__construct
-     */
-    public function constructShouldUseSystemDefaultTimezoneIfNoneWasProvided(): void
-    {
-        self::assertEquals(new SystemClock(new DateTimeZone(date_default_timezone_get())), new SystemClock());
-    }
-
-    /**
-     * @test
-     *
-     * @covers ::__construct
      * @covers ::now
      */
     public function nowShouldRespectTheProvidedTimezone(): void
