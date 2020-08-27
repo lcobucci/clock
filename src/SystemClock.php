@@ -12,9 +12,9 @@ final class SystemClock implements Clock
 {
     private DateTimeZone $timezone;
 
-    public function __construct(?DateTimeZone $timezone = null)
+    public function __construct(DateTimeZone $timezone)
     {
-        $this->timezone = $timezone ?? new DateTimeZone(date_default_timezone_get());
+        $this->timezone = $timezone;
     }
 
     public static function fromUTC(): self
