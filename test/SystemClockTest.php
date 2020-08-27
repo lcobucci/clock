@@ -56,4 +56,20 @@ final class SystemClockTest extends TestCase
 
         self::assertSame('UTC', $now->getTimezone()->getName());
     }
+
+    /**
+     * @test
+     *
+     * @covers \Lcobucci\Clock\SystemClock::fromSystemTimezone
+     * @covers \Lcobucci\Clock\SystemClock::__construct
+     *
+     * @uses \Lcobucci\Clock\SystemClock::now
+     */
+    public function fromSystemTimezoneCreatesAnInstanceUsingTheDefaultTimezoneInSystem(): void
+    {
+        $clock = SystemClock::fromSystemTimezone();
+        $now   = $clock->now();
+
+        self::assertSame(date_default_timezone_get(), $now->getTimezone()->getName());
+    }
 }
