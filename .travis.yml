@@ -46,7 +46,8 @@ jobs:
         - mv ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini{.disabled,}
         - if [[ ! $(php -m | grep -si xdebug) ]]; then echo "xdebug required for coverage"; exit 1; fi
       script:
-        - ./vendor/bin/infection -s --threads=4 --min-msi=100 --min-covered-msi=100
+        - ./vendor/bin/phpunit --coverage-xml=build/coverage-xml --log-junit=build/junit.xml
+        - ./vendor/bin/infection -s --threads=4 --coverage=build --min-msi=100 --min-covered-msi=100
 
     - stage: Metrics and quality
       env: STATIC_ANALYSIS
