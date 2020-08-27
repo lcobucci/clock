@@ -5,9 +5,9 @@
 [![Unstable Version](https://img.shields.io/packagist/vpre/lcobucci/clock.svg?style=flat-square)](https://packagist.org/packages/lcobucci/clock)
 
 
-[![Build Status](https://img.shields.io/travis/lcobucci/clock/2.0.x.svg?style=flat-square)](http://travis-ci.org/lcobucci/clock)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/lcobucci/clock/2.0.x.svg?style=flat-square)](https://scrutinizer-ci.com/g/lcobucci/clock/?branch=2.0.x)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/lcobucci/clock/2.0.x.svg?style=flat-square)](https://scrutinizer-ci.com/g/lcobucci/clock/?branch=2.0.x)
+[![Build Status](https://img.shields.io/travis/lcobucci/clock/2.1.x.svg?style=flat-square)](http://travis-ci.org/lcobucci/clock)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/lcobucci/clock/2.1.x.svg?style=flat-square)](https://scrutinizer-ci.com/g/lcobucci/clock/?branch=2.1.x)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/lcobucci/clock/2.1.x.svg?style=flat-square)](https://scrutinizer-ci.com/g/lcobucci/clock/?branch=2.1.x)
 
 Yet another clock abstraction...
 
