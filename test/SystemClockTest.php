@@ -40,4 +40,20 @@ final class SystemClockTest extends TestCase
         self::assertGreaterThanOrEqual($lower, $now);
         self::assertLessThanOrEqual($upper, $now);
     }
+
+    /**
+     * @test
+     *
+     * @covers \Lcobucci\Clock\SystemClock::fromUTC
+     * @covers \Lcobucci\Clock\SystemClock::__construct
+     *
+     * @uses \Lcobucci\Clock\SystemClock::now
+     */
+    public function fromUTCCreatesAnInstanceUsingUTCAsTimezone(): void
+    {
+        $clock = SystemClock::fromUTC();
+        $now   = $clock->now();
+
+        self::assertSame('UTC', $now->getTimezone()->getName());
+    }
 }
