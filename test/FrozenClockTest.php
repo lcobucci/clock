@@ -47,20 +47,15 @@ final class FrozenClockTest extends TestCase
      * @test
      *
      * @covers \Lcobucci\Clock\FrozenClock::fromUTC
+     * @covers \Lcobucci\Clock\FrozenClock::__construct
      *
-     * @uses \Lcobucci\Clock\FrozenClock::__construct
      * @uses \Lcobucci\Clock\FrozenClock::now
      */
     public function fromUTCCreatesClockFrozenAtCurrentSystemTimeInUTC(): void
     {
-        $lower = new DateTimeImmutable();
         $clock = FrozenClock::fromUTC();
-        $upper = new DateTimeImmutable();
+        $now   = $clock->now();
 
-        $now = $clock->now();
-
-        self::assertGreaterThanOrEqual($lower->getTimestamp(), $now->getTimestamp());
-        self::assertLessThanOrEqual($upper->getTimestamp(), $now->getTimestamp());
-        self::assertEquals('UTC', $now->getTimezone()->getName());
+        self::assertSame('UTC', $now->getTimezone()->getName());
     }
 }

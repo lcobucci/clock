@@ -43,12 +43,17 @@ function filterData(Clock $clock, array $objects): array
 }
 
 // Object that will return the current time based on the given timezone
-$clock = new SystemClock(new DateTimeZone('UTC'));
+// $clock = SystemClock::fromSystemTimezone();
+// $clock = SystemClock::fromUTC();
+$clock = new SystemClock(new DateTimeZone('America/Sao_Paulo'));
 
 // Test object that always returns a fixed time object
 $clock = new FrozenClock(
     new DateTimeImmutable('2017-05-07 18:49:30')
 );
+
+// Or creating a frozen clock from the current time on UTC
+// $clock = FrozenClock::fromUTC();
 
 $objects = [
     (object) ['expiresAt' => new DateTimeImmutable('2017-12-31 23:59:59')],

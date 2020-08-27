@@ -17,6 +17,16 @@ final class SystemClock implements Clock
         $this->timezone = $timezone ?? new DateTimeZone(date_default_timezone_get());
     }
 
+    public static function fromUTC(): self
+    {
+        return new self(new DateTimeZone('UTC'));
+    }
+
+    public static function fromSystemTimezone(): self
+    {
+        return new self(new DateTimeZone(date_default_timezone_get()));
+    }
+
     public function now(): DateTimeImmutable
     {
         return new DateTimeImmutable('now', $this->timezone);

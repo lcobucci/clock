@@ -15,7 +15,7 @@ final class FrozenClock implements Clock
         $this->now = $now;
     }
 
-    public static function fromUTC(): FrozenClock
+    public static function fromUTC(): self
     {
         return new self(new DateTimeImmutable('now', new DateTimeZone('UTC')));
     }
