@@ -20,7 +20,7 @@
         "phpstan/phpstan-deprecation-rules": "^0.12",
         "phpstan/phpstan-phpunit": "^0.12",
         "phpstan/phpstan-strict-rules": "^0.12",
-        "phpunit/php-code-coverage": "9.1.4",
+        "phpunit/php-code-coverage": "9.1.6",
         "phpunit/phpunit": "9.3.7"
     },
     "autoload": {
