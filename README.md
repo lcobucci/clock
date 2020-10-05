@@ -1,13 +1,11 @@
 # Clock
 
-[![Total Downloads](https://img.shields.io/packagist/dt/lcobucci/clock.svg?style=flat-square)](https://packagist.org/packages/lcobucci/clock)
-[![Latest Stable Version](https://img.shields.io/packagist/v/lcobucci/clock.svg?style=flat-square)](https://packagist.org/packages/lcobucci/clock)
-[![Unstable Version](https://img.shields.io/packagist/vpre/lcobucci/clock.svg?style=flat-square)](https://packagist.org/packages/lcobucci/clock)
+[![Total Downloads]](https://packagist.org/packages/lcobucci/clock)
+[![Latest Stable Version]](https://packagist.org/packages/lcobucci/clock)
+[![Unstable Version]](https://packagist.org/packages/lcobucci/clock)
 
-
-[![Build Status](https://img.shields.io/travis/lcobucci/clock/2.1.x.svg?style=flat-square)](http://travis-ci.org/lcobucci/clock)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/lcobucci/clock/2.1.x.svg?style=flat-square)](https://scrutinizer-ci.com/g/lcobucci/clock/?branch=2.1.x)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/lcobucci/clock/2.1.x.svg?style=flat-square)](https://scrutinizer-ci.com/g/lcobucci/clock/?branch=2.1.x)
+[![Build Status]](https://github.com/lcobucci/clock/actions?query=workflow%3A%22PHPUnit%20Tests%22+branch%3A2.1.x)
+[![Code Coverage]](https://codecov.io/gh/lcobucci/clock)
 
 Yet another clock abstraction...
 
@@ -15,7 +13,7 @@ The purpose is to decouple projects from `DateTimeImmutable` instantiation so th
 
 ## Installation
 
-Package is available on [Packagist](http://packagist.org/packages/lcobucci/clock), you can install it using [Composer](http://getcomposer.org).
+Package is available on [Packagist], you can install it using [Composer].
 
 ```shell
 composer require lcobucci/clock
@@ -63,3 +61,11 @@ $objects = [
 
 var_dump(filterData($clock, $objects)); // last item will be filtered
 ```
+
+[Total Downloads]: https://img.shields.io/packagist/dt/lcobucci/clock.svg?style=flat-square
+[Latest Stable Version]: https://img.shields.io/packagist/v/lcobucci/clock.svg?style=flat-square
+[Unstable Version]: https://img.shields.io/packagist/vpre/lcobucci/clock.svg?style=flat-square
+[Build Status]: https://img.shields.io/github/workflow/status/lcobucci/clock/PHPUnit%20tests/2.1.x?style=flat-square
+[Code Coverage]: https://codecov.io/gh/lcobucci/clock/branch/2.1.x/graph/badge.svg
+[Packagist]: http://packagist.org/packages/lcobucci/clock
+[Composer]: http://getcomposer.org
