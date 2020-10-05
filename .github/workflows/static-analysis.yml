@@ -5,7 +5,7 @@ on:
   push:
 
 jobs:
-  mutation-tests:
+  static-analysis:
     name: "Static Analysis"
 
     runs-on: ${{ matrix.operating-system }}
