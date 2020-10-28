@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8aebe355f38297e643cc4aa8088e6b9",
+    "content-hash": "fd854c4d9fd218d798d308f96e991488",
     "packages": [],
     "packages-dev": [
         {
@@ -389,16 +389,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.18.2",
+            "version": "0.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "05685f8e97ec2d42455fdaad6984446d5af2f67e"
+                "reference": "e28e9ed25217dd8a9f5ffb480347ba96e3a39d3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/05685f8e97ec2d42455fdaad6984446d5af2f67e",
-                "reference": "05685f8e97ec2d42455fdaad6984446d5af2f67e",
+                "url": "https://api.github.com/repos/infection/infection/zipball/e28e9ed25217dd8a9f5ffb480347ba96e3a39d3f",
+                "reference": "e28e9ed25217dd8a9f5ffb480347ba96e3a39d3f",
                 "shasum": ""
             },
             "require": {
@@ -413,7 +413,7 @@
                 "nikic/php-parser": "^4.10.2",
                 "ocramius/package-versions": "^1.2 || ^2.0",
                 "ondram/ci-detector": "^3.3.0",
-                "php": "^7.3 || ^8.0",
+                "php": "^7.4 || ^8.0",
                 "sanmai/pipeline": "^3.1 || ^5.0",
                 "sebastian/diff": "^3.0.2 || ^4.0",
                 "seld/jsonlint": "^1.7",
@@ -430,7 +430,6 @@
                 "symfony/console": "=4.1.5"
             },
             "require-dev": {
-                "composer/package-versions-deprecated": "^1.2 || ^2.0",
                 "ext-simplexml": "*",
                 "helmich/phpunit-json-assert": "^3.0",
                 "phpspec/prophecy-phpunit": "^2.0",
@@ -495,7 +494,7 @@
                 "testing",
                 "unit testing"
             ],
-            "time": "2020-10-21T20:25:38+00:00"
+            "time": "2020-10-27T23:18:49+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
