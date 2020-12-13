@@ -1233,16 +1233,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.60",
+            "version": "0.12.61",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "d4577922c296d28746e28a5f046e787562143157"
+                "reference": "2096111b454b018ba6edcd4852b54a78e4ccbeca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d4577922c296d28746e28a5f046e787562143157",
-                "reference": "d4577922c296d28746e28a5f046e787562143157",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/2096111b454b018ba6edcd4852b54a78e4ccbeca",
+                "reference": "2096111b454b018ba6edcd4852b54a78e4ccbeca",
                 "shasum": ""
             },
             "require": {
@@ -1285,7 +1285,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-12T13:07:07+00:00"
+            "time": "2020-12-13T10:04:03+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
