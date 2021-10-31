@@ -10,11 +10,11 @@
         }
     ],
     "require": {
-        "php": "^7.4 || ^8.0"
+        "php": "^8.0"
     },
     "require-dev": {
-        "infection/infection": "^0.21",
-        "lcobucci/coding-standard": "^6.0",
+        "infection/infection": "^0.25",
+        "lcobucci/coding-standard": "^8.0",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan": "^0.12",
         "phpstan/phpstan-deprecation-rules": "^0.12",
