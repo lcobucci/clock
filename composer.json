@@ -1,8 +1,8 @@
 {
     "name": "lcobucci/clock",
     "description": "Yet another clock abstraction",
-    "type": "library",
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "Luís Cobucci",
