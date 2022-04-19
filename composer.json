@@ -10,7 +10,8 @@
         }
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "stella-maris/clock": "^0.1.4"
     },
     "require-dev": {
         "infection/infection": "^0.26",
