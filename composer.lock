@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "558b8e6260871e5c38ebced1daeb2534",
+    "content-hash": "bc54d206e56cbdeea420fa5d429a8252",
     "packages": [
         {
             "name": "stella-maris/clock",
@@ -4464,7 +4464,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.0"
+        "php": "^8.1"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
