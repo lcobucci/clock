@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^8.1",
-        "stella-maris/clock": "^0.1.5"
+        "stella-maris/clock": "^0.1.6"
     },
     "require-dev": {
         "infection/infection": "^0.26",
