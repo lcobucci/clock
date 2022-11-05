@@ -17,11 +17,11 @@
         "infection/infection": "^0.26",
         "lcobucci/coding-standard": "^9.0",
         "phpstan/extension-installer": "^1.2",
-        "phpstan/phpstan": "^1.8",
+        "phpstan/phpstan": "^1.9.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.2",
-        "phpstan/phpstan-strict-rules": "^1.4",
-        "phpunit/phpunit": "^9.5"
+        "phpstan/phpstan-phpunit": "^1.2.2",
+        "phpstan/phpstan-strict-rules": "^1.4.4",
+        "phpunit/phpunit": "^9.5.26"
     },
     "autoload": {
         "psr-4": {
