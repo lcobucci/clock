@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace Lcobucci\Clock;
 
 use DateTimeImmutable;
-use StellaMaris\Clock\ClockInterface;
+use Psr\Clock\ClockInterface;
 
 interface Clock extends ClockInterface
 {
