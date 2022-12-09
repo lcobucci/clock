@@ -21,7 +21,7 @@
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.3.0",
         "phpstan/phpstan-strict-rules": "^1.4.4",
-        "phpunit/phpunit": "^9.5.26"
+        "phpunit/phpunit": "^9.5.27"
     },
     "autoload": {
         "psr-4": {
