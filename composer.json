@@ -41,5 +41,8 @@
             "infection/extension-installer": true,
             "phpstan/extension-installer": true
         }
+    },
+    "provide": {
+        "psr/clock-implementation": "1.0"
     }
 }
