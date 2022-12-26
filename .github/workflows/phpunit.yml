@@ -28,7 +28,7 @@ jobs:
         uses: "actions/checkout@v3"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.22.0"
+        uses: "shivammathur/setup-php@2.23.0"
         with:
           php-version: "${{ matrix.php-version }}"
           ini-values: memory_limit=-1
@@ -83,7 +83,7 @@ jobs:
         uses: "actions/checkout@v3"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.22.0"
+        uses: "shivammathur/setup-php@2.23.0"
         with:
           coverage: "none"
           php-version: "${{ matrix.php-version }}"
