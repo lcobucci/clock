@@ -16,8 +16,8 @@ phpunit:
 
 .PHONY: infection
 infection:
-	@vendor/bin/phpunit --coverage-xml=build/coverage-xml --log-junit=build/junit.xml $(PHPUNIT_FLAGS)
-	@vendor/bin/infection -s --threads=$(PARALLELISM) --coverage=build
+	@php -d xdebug.mode=coverage vendor/bin/phpunit --coverage-xml=build/coverage-xml --log-junit=build/junit.xml $(PHPUNIT_FLAGS)
+	@vendor/bin/infection -v -s --threads=$(PARALLELISM) --coverage=build --skip-initial-tests $(INFECTION_FLAGS)
 
 .PHONY: phpcbf
 phpcbf:
@@ -29,5 +29,5 @@ phpcs:
 
 .PHONY: phpstan
 phpstan:
-	@vendor/bin/phpstan analyse
+	@php -d xdebug.mode=off vendor/bin/phpstan analyse
 

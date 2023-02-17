@@ -2,31 +2,28 @@
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
     colors="true"
-    verbose="true"
     beStrictAboutOutputDuringTests="true"
-    beStrictAboutTestsThatDoNotTestAnything="true"
-    beStrictAboutTodoAnnotatedTests="true"
     beStrictAboutChangesToGlobalState="true"
-    beStrictAboutCoversAnnotation="true"
-    beStrictAboutResourceUsageDuringSmallTests="true"
-    forceCoversAnnotation="true"
+    beStrictAboutCoverageMetadata="true"
     executionOrder="random"
     failOnRisky="true"
     failOnWarning="true"
+    cacheDirectory=".phpunit.cache"
+    requireCoverageMetadata="true"
 >
-    <php>
-        <ini name="date.timezone" value="UTC" />
-    </php>
+  <php>
+    <ini name="date.timezone" value="UTC"/>
+  </php>
 
-    <testsuites>
-        <testsuite name="unit">
-            <directory>test</directory>
-        </testsuite>
-    </testsuites>
+  <testsuites>
+    <testsuite name="unit">
+      <directory>test</directory>
+    </testsuite>
+  </testsuites>
 
-    <coverage processUncoveredFiles="true">
-        <include>
-            <directory suffix=".php">src</directory>
-        </include>
-    </coverage>
+  <coverage>
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+  </coverage>
 </phpunit>
