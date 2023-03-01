@@ -4,6 +4,7 @@
 /.gitignore     export-ignore
 /.*.yml         export-ignore
 /README.md      export-ignore
+/renovate.json  export-ignore
 /*.dist         export-ignore
 /composer.lock  export-ignore
 /Makefile       export-ignore
