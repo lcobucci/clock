@@ -4,7 +4,7 @@
 [![Latest Stable Version]](https://packagist.org/packages/lcobucci/clock)
 [![Unstable Version]](https://packagist.org/packages/lcobucci/clock)
 
-[![Build Status]](https://github.com/lcobucci/clock/actions?query=workflow%3A%22PHPUnit%20Tests%22+branch%3A2.1.x)
+[![Build Status]](https://github.com/lcobucci/clock/actions?query=workflow%3A%22PHPUnit%20Tests%22+branch%3A3.1.x)
 [![Code Coverage]](https://codecov.io/gh/lcobucci/clock)
 
 Yet another clock abstraction...
@@ -65,7 +65,7 @@ var_dump(filterData($clock, $objects)); // last item will be filtered
 [Total Downloads]: https://img.shields.io/packagist/dt/lcobucci/clock.svg?style=flat-square
 [Latest Stable Version]: https://img.shields.io/packagist/v/lcobucci/clock.svg?style=flat-square
 [Unstable Version]: https://img.shields.io/packagist/vpre/lcobucci/clock.svg?style=flat-square
-[Build Status]: https://img.shields.io/github/workflow/status/lcobucci/clock/PHPUnit%20tests/2.1.x?style=flat-square
+[Build Status]: https://img.shields.io/github/actions/workflow/status/lcobucci/clock/phpunit.yml?branch=3.1.x&style=flat-square
 [Code Coverage]: https://codecov.io/gh/lcobucci/clock/branch/2.1.x/graph/badge.svg
 [Packagist]: http://packagist.org/packages/lcobucci/clock
 [Composer]: http://getcomposer.org
