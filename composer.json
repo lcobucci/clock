@@ -14,7 +14,7 @@
         "psr/clock": "^1.0"
     },
     "require-dev": {
-        "infection/infection": "^0.26",
+        "infection/infection": "^0.27",
         "lcobucci/coding-standard": "^10.0.0",
         "phpstan/extension-installer": "^1.3.0",
         "phpstan/phpstan": "^1.10.15",

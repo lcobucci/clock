@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e96b90b43ca72a69bbcd94682bd790a0",
+    "content-hash": "bec72532d341269cadca009becf3fff3",
     "packages": [
         {
             "name": "psr/clock",
@@ -420,16 +420,16 @@
         },
         {
             "name": "fidry/cpu-core-counter",
-            "version": "0.4.1",
+            "version": "0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theofidry/cpu-core-counter.git",
-                "reference": "79261cc280aded96d098e1b0e0ba0c4881b432c2"
+                "reference": "b58e5a3933e541dc286cc91fc4f3898bbc6f1623"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theofidry/cpu-core-counter/zipball/79261cc280aded96d098e1b0e0ba0c4881b432c2",
-                "reference": "79261cc280aded96d098e1b0e0ba0c4881b432c2",
+                "url": "https://api.github.com/repos/theofidry/cpu-core-counter/zipball/b58e5a3933e541dc286cc91fc4f3898bbc6f1623",
+                "reference": "b58e5a3933e541dc286cc91fc4f3898bbc6f1623",
                 "shasum": ""
             },
             "require": {
@@ -469,7 +469,7 @@
             ],
             "support": {
                 "issues": "https://github.com/theofidry/cpu-core-counter/issues",
-                "source": "https://github.com/theofidry/cpu-core-counter/tree/0.4.1"
+                "source": "https://github.com/theofidry/cpu-core-counter/tree/0.5.1"
             },
             "funding": [
                 {
@@ -477,7 +477,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-12-16T22:01:02+00:00"
+            "time": "2022-12-24T12:35:10+00:00"
         },
         {
             "name": "infection/abstract-testframework-adapter",
@@ -658,16 +658,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.26.21",
+            "version": "0.27.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "9bbe4994d204587e0e27475e6681b66608a690a9"
+                "reference": "a9ff8171577d98b887d7f16428edd81ff69ce887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/9bbe4994d204587e0e27475e6681b66608a690a9",
-                "reference": "9bbe4994d204587e0e27475e6681b66608a690a9",
+                "url": "https://api.github.com/repos/infection/infection/zipball/a9ff8171577d98b887d7f16428edd81ff69ce887",
+                "reference": "a9ff8171577d98b887d7f16428edd81ff69ce887",
                 "shasum": ""
             },
             "require": {
@@ -678,7 +678,7 @@
                 "ext-json": "*",
                 "ext-libxml": "*",
                 "ext-mbstring": "*",
-                "fidry/cpu-core-counter": "^0.4.0",
+                "fidry/cpu-core-counter": "^0.4.0 || ^0.5.0",
                 "infection/abstract-testframework-adapter": "^0.5.0",
                 "infection/extension-installer": "^0.1.0",
                 "infection/include-interceptor": "^0.2.5",
@@ -709,11 +709,13 @@
                 "phpspec/prophecy": "^1.15",
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpstan/extension-installer": "^1.1.0",
-                "phpstan/phpstan": "^1.3.0",
+                "phpstan/phpstan": "^1.10.15",
                 "phpstan/phpstan-phpunit": "^1.0.0",
                 "phpstan/phpstan-strict-rules": "^1.1.0",
                 "phpstan/phpstan-webmozart-assert": "^1.0.2",
                 "phpunit/phpunit": "^9.5.5",
+                "rector/rector": "^0.16.0",
+                "sidz/phpstan-rules": "^0.2.1",
                 "symfony/phpunit-bridge": "^5.4 || ^6.0",
                 "symfony/yaml": "^5.4 || ^6.0",
                 "thecodingmachine/phpstan-safe-rule": "^1.2.0"
@@ -772,7 +774,7 @@
             ],
             "support": {
                 "issues": "https://github.com/infection/infection/issues",
-                "source": "https://github.com/infection/infection/tree/0.26.21"
+                "source": "https://github.com/infection/infection/tree/0.27.0"
             },
             "funding": [
                 {
@@ -784,7 +786,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-04-25T19:40:27+00:00"
+            "time": "2023-05-16T05:28:04+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
