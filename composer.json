@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "~8.2.0",
+        "php": "~8.2.8",
         "psr/clock": "^1.0"
     },
     "require-dev": {
