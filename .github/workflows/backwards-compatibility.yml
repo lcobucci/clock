@@ -9,6 +9,10 @@ jobs:
 
     runs-on: "ubuntu-latest"
 
+    strategy:
+      matrix:
+        php-version: ["8.2", "8.3"]
+
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v3"
@@ -18,7 +22,7 @@ jobs:
       - name: "Install PHP"
         uses: "shivammathur/setup-php@2.25.5"
         with:
-          php-version: "8.2"
+          php-version: "${{ matrix.php-version }}"
           ini-values: memory_limit=-1
           tools: composer:v2, cs2pr
         env:
