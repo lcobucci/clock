@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "~8.2.0",
+        "php": "~8.2.0 || ~8.3.0",
         "psr/clock": "^1.0"
     },
     "require-dev": {
@@ -23,6 +23,9 @@
         "phpstan/phpstan-strict-rules": "^1.5.1",
         "phpunit/phpunit": "^10.2.3"
     },
+    "provide": {
+        "psr/clock-implementation": "1.0"
+    },
     "autoload": {
         "psr-4": {
             "Lcobucci\\Clock\\": "src"
@@ -34,15 +37,12 @@
         }
     },
     "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "infection/extension-installer": true,
             "phpstan/extension-installer": true
-        }
-    },
-    "provide": {
-        "psr/clock-implementation": "1.0"
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
     }
 }
