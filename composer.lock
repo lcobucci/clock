@@ -149,16 +149,16 @@
         },
         {
             "name": "composer/pcre",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/pcre.git",
-                "reference": "4bff79ddd77851fe3cdd11616ed3f92841ba5bd2"
+                "reference": "00104306927c7a0919b4ced2aaa6782c1e61a3c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/pcre/zipball/4bff79ddd77851fe3cdd11616ed3f92841ba5bd2",
-                "reference": "4bff79ddd77851fe3cdd11616ed3f92841ba5bd2",
+                "url": "https://api.github.com/repos/composer/pcre/zipball/00104306927c7a0919b4ced2aaa6782c1e61a3c9",
+                "reference": "00104306927c7a0919b4ced2aaa6782c1e61a3c9",
                 "shasum": ""
             },
             "require": {
@@ -200,7 +200,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/pcre/issues",
-                "source": "https://github.com/composer/pcre/tree/3.1.0"
+                "source": "https://github.com/composer/pcre/tree/3.1.1"
             },
             "funding": [
                 {
@@ -216,7 +216,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-17T09:50:14+00:00"
+            "time": "2023-10-11T07:11:09+00:00"
         },
         {
             "name": "composer/xdebug-handler",
@@ -658,16 +658,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.27.4",
+            "version": "0.27.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "2789fdd689689b0c85f2c0ae9db50c8d2b39fb92"
+                "reference": "6e64b856c9f4f735e50b7ced02a6fc8236b0a1d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/2789fdd689689b0c85f2c0ae9db50c8d2b39fb92",
-                "reference": "2789fdd689689b0c85f2c0ae9db50c8d2b39fb92",
+                "url": "https://api.github.com/repos/infection/infection/zipball/6e64b856c9f4f735e50b7ced02a6fc8236b0a1d8",
+                "reference": "6e64b856c9f4f735e50b7ced02a6fc8236b0a1d8",
                 "shasum": ""
             },
             "require": {
@@ -774,7 +774,7 @@
             ],
             "support": {
                 "issues": "https://github.com/infection/infection/issues",
-                "source": "https://github.com/infection/infection/tree/0.27.4"
+                "source": "https://github.com/infection/infection/tree/0.27.5"
             },
             "funding": [
                 {
@@ -786,7 +786,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-10-09T12:03:22+00:00"
+            "time": "2023-10-15T20:29:39+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
