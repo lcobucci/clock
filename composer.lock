@@ -658,16 +658,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.27.5",
+            "version": "0.27.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "6e64b856c9f4f735e50b7ced02a6fc8236b0a1d8"
+                "reference": "3a39f6cbfadcd6f32db6221e3c5e4ae9aa99671c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/6e64b856c9f4f735e50b7ced02a6fc8236b0a1d8",
-                "reference": "6e64b856c9f4f735e50b7ced02a6fc8236b0a1d8",
+                "url": "https://api.github.com/repos/infection/infection/zipball/3a39f6cbfadcd6f32db6221e3c5e4ae9aa99671c",
+                "reference": "3a39f6cbfadcd6f32db6221e3c5e4ae9aa99671c",
                 "shasum": ""
             },
             "require": {
@@ -715,7 +715,7 @@
                 "phpstan/phpstan-webmozart-assert": "^1.0.2",
                 "phpunit/phpunit": "^9.5.5",
                 "rector/rector": "^0.16.0",
-                "sidz/phpstan-rules": "^0.3.0",
+                "sidz/phpstan-rules": "^0.4.0",
                 "symfony/phpunit-bridge": "^5.4 || ^6.0",
                 "symfony/yaml": "^5.4 || ^6.0",
                 "thecodingmachine/phpstan-safe-rule": "^1.2.0"
@@ -774,7 +774,7 @@
             ],
             "support": {
                 "issues": "https://github.com/infection/infection/issues",
-                "source": "https://github.com/infection/infection/tree/0.27.5"
+                "source": "https://github.com/infection/infection/tree/0.27.6"
             },
             "funding": [
                 {
@@ -786,7 +786,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-10-15T20:29:39+00:00"
+            "time": "2023-10-16T11:04:15+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
