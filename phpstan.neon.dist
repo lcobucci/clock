@@ -3,3 +3,18 @@ parameters:
     paths:
         - src
         - test
+
+    ignoreErrors:
+        # This is only for PHP 8.2 compatibility
+        -
+         message: "#^PHPDoc tag @throws with type DateMalformedStringException\\|InvalidArgumentException is not subtype of Throwable$#"
+         count: 1
+         path: src/FrozenClock.php
+        -
+         message: "#^Class DateMalformedStringException not found\\.$#"
+         count: 1
+         path: test/FrozenClockTest.php
+        -
+         message: "#^Parameter \\#1 \\$exception of method PHPUnit\\\\Framework\\\\TestCase\\:\\:expectException\\(\\) expects class\\-string\\<Throwable\\>, string given\\.$#"
+         count: 1
+         path: test/FrozenClockTest.php
