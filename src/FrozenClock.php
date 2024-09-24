@@ -6,7 +6,6 @@ namespace Lcobucci\Clock;
 use DateMalformedStringException;
 use DateTimeImmutable;
 use DateTimeZone;
-use InvalidArgumentException;
 
 final class FrozenClock implements Clock
 {
@@ -29,19 +28,11 @@ final class FrozenClock implements Clock
      *
      * @param string $modifier @see https://www.php.net/manual/en/datetime.formats.php
      *
-     * @throws InvalidArgumentException When an invalid format string is passed (PHP < 8.3).
-     * @throws DateMalformedStringException When an invalid date/time string is passed (PHP 8.3+).
+     * @throws DateMalformedStringException When an invalid date/time string is passed.
      */
     public function adjustTime(string $modifier): void
     {
-        $modifiedTime = @$this->now->modify($modifier);
-
-        // PHP < 8.3 won't throw exceptions on invalid modifiers
-        if ($modifiedTime === false) {
-            throw new InvalidArgumentException('The given modifier is invalid');
-        }
-
-        $this->now = $modifiedTime;
+        $this->now = $this->now->modify($modifier);
     }
 
     public function now(): DateTimeImmutable
