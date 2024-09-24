@@ -41,7 +41,7 @@ final class FrozenClock implements Clock
             throw new InvalidArgumentException('The given modifier is invalid');
         }
 
-        $this->now = $this->now->modify($modifier);
+        $this->now = $modifiedTime;
     }
 
     public function now(): DateTimeImmutable
