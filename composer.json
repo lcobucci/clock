@@ -21,7 +21,7 @@
         "phpstan/phpstan-deprecation-rules": "^2.0.0",
         "phpstan/phpstan-phpunit": "^2.0.0",
         "phpstan/phpstan-strict-rules": "^2.0.0",
-        "phpunit/phpunit": "^11.3.6"
+        "phpunit/phpunit": "^12.0.0"
     },
     "provide": {
         "psr/clock-implementation": "1.0"
