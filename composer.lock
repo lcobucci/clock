@@ -958,16 +958,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.12.1",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845"
+                "reference": "024473a478be9df5fdaca2c793f2232fe788e414"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/123267b2c49fbf30d78a7b2d333f6be754b94845",
-                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/024473a478be9df5fdaca2c793f2232fe788e414",
+                "reference": "024473a478be9df5fdaca2c793f2232fe788e414",
                 "shasum": ""
             },
             "require": {
@@ -1006,7 +1006,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.12.1"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.0"
             },
             "funding": [
                 {
@@ -1014,7 +1014,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-08T17:47:46+00:00"
+            "time": "2025-02-12T12:17:51+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -1571,16 +1571,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "12.0.2",
+            "version": "12.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "69dde560510151f7d04315fac6c72016cc5d7bc8"
+                "reference": "2e3038bff41d56114e5396151060f5ac9d2d6751"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/69dde560510151f7d04315fac6c72016cc5d7bc8",
-                "reference": "69dde560510151f7d04315fac6c72016cc5d7bc8",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/2e3038bff41d56114e5396151060f5ac9d2d6751",
+                "reference": "2e3038bff41d56114e5396151060f5ac9d2d6751",
                 "shasum": ""
             },
             "require": {
@@ -1636,7 +1636,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/12.0.2"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/12.0.3"
             },
             "funding": [
                 {
@@ -1644,7 +1644,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-08T09:08:00+00:00"
+            "time": "2025-02-18T14:04:13+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -1893,16 +1893,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "12.0.2",
+            "version": "12.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "6301fe5c1f5f34192ffd650a87fe055677a32212"
+                "reference": "df170d66e1dbb8ff0f21c9be2e7d7726bebc57ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6301fe5c1f5f34192ffd650a87fe055677a32212",
-                "reference": "6301fe5c1f5f34192ffd650a87fe055677a32212",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/df170d66e1dbb8ff0f21c9be2e7d7726bebc57ed",
+                "reference": "df170d66e1dbb8ff0f21c9be2e7d7726bebc57ed",
                 "shasum": ""
             },
             "require": {
@@ -1970,7 +1970,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.0.2"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.0.3"
             },
             "funding": [
                 {
@@ -1986,7 +1986,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-02-08T09:18:47+00:00"
+            "time": "2025-02-18T06:28:55+00:00"
         },
         {
             "name": "psr/container",
