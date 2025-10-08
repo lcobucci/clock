@@ -7,6 +7,8 @@ use DateMalformedStringException;
 use DateTimeImmutable;
 use DateTimeZone;
 
+use function date_default_timezone_get;
+
 final class FrozenClock implements Clock
 {
     public function __construct(private DateTimeImmutable $now)
@@ -16,6 +18,11 @@ final class FrozenClock implements Clock
     public static function fromUTC(): self
     {
         return new self(new DateTimeImmutable('now', new DateTimeZone('UTC')));
+    }
+
+    public static function fromSystemTimezone(): self
+    {
+        return new self(new DateTimeImmutable('now', new DateTimeZone(date_default_timezone_get())));
     }
 
     public function setTo(DateTimeImmutable $now): void
