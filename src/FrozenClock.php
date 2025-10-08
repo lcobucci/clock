@@ -26,7 +26,7 @@ final class FrozenClock implements Clock
     /**
      * Adjusts the current time by a given modifier.
      *
-     * @param string $modifier @see https://www.php.net/manual/en/datetime.formats.php
+     * @param non-empty-string $modifier @see https://www.php.net/manual/en/datetime.formats.php
      *
      * @throws DateMalformedStringException When an invalid date/time string is passed.
      */
