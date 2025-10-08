@@ -9,6 +9,8 @@ use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
+use function date_default_timezone_get;
+
 #[CoversClass(FrozenClock::class)]
 final class FrozenClockTest extends TestCase
 {
@@ -70,5 +72,14 @@ final class FrozenClockTest extends TestCase
         $now   = $clock->now();
 
         self::assertSame('UTC', $now->getTimezone()->getName());
+    }
+
+    #[Test]
+    public function fromSystemTimezoneCreatesAnInstanceUsingTheDefaultTimezoneInSystem(): void
+    {
+        $clock = FrozenClock::fromSystemTimezone();
+        $now   = $clock->now();
+
+        self::assertSame(date_default_timezone_get(), $now->getTimezone()->getName());
     }
 }
