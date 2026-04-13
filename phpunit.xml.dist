@@ -10,6 +10,7 @@
     failOnWarning="true"
     cacheDirectory=".phpunit.cache"
     requireCoverageMetadata="true"
+    displayDetailsOnAllIssues="true"
 >
   <php>
     <ini name="date.timezone" value="UTC"/>
