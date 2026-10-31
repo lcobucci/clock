@@ -383,7 +383,8 @@
                     "type": "thanks_dev"
                 }
             ],
-            "time": "2025-11-11T04:32:07+00:00"
+            "time": "2025-11-11T04:32:07+00:00",
+            "published-time": "2025-11-11T06:24:43+00:00"
         },
         {
             "name": "doctrine/coding-standard",
@@ -439,7 +440,8 @@
                 "issues": "https://github.com/doctrine/coding-standard/issues",
                 "source": "https://github.com/doctrine/coding-standard/tree/14.0.0"
             },
-            "time": "2025-09-21T18:21:47+00:00"
+            "time": "2025-09-21T18:21:47+00:00",
+            "published-time": "2025-09-30T17:01:23+00:00"
         },
         {
             "name": "fidry/cpu-core-counter",
@@ -950,21 +952,21 @@
         },
         {
             "name": "lcobucci/coding-standard",
-            "version": "12.0.0",
+            "version": "12.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/coding-standard.git",
-                "reference": "8a186dc165176be308f1ad68586f6e696c7c39ae"
+                "reference": "3d7f649ee7588f20133c0bd1c791d3c2af544626"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/coding-standard/zipball/8a186dc165176be308f1ad68586f6e696c7c39ae",
-                "reference": "8a186dc165176be308f1ad68586f6e696c7c39ae",
+                "url": "https://api.github.com/repos/lcobucci/coding-standard/zipball/3d7f649ee7588f20133c0bd1c791d3c2af544626",
+                "reference": "3d7f649ee7588f20133c0bd1c791d3c2af544626",
                 "shasum": ""
             },
             "require": {
                 "doctrine/coding-standard": "^14.0.0",
-                "php": "~8.4.0 || ~8.5.0"
+                "php": "~8.4.0 || ~8.5.0 || ~8.6.0"
             },
             "require-dev": {
                 "roave/security-advisories": "dev-latest"
@@ -983,7 +985,7 @@
             "description": "Lcobucci's Coding Standard",
             "support": {
                 "issues": "https://github.com/lcobucci/coding-standard/issues",
-                "source": "https://github.com/lcobucci/coding-standard/tree/12.0.0"
+                "source": "https://github.com/lcobucci/coding-standard/tree/12.1.0"
             },
             "funding": [
                 {
@@ -995,7 +997,8 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2026-04-13T20:06:47+00:00"
+            "time": "2026-10-31T11:37:16+00:00",
+            "published-time": "2026-10-31T11:38:55+00:00"
         },
         {
             "name": "marc-mabe/php-enum",
@@ -1476,7 +1479,8 @@
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
                 "source": "https://github.com/phpstan/phpdoc-parser/tree/2.3.2"
             },
-            "time": "2026-01-25T14:56:51+00:00"
+            "time": "2026-01-25T14:56:51+00:00",
+            "published-time": "2026-01-25T14:57:20+00:00"
         },
         {
             "name": "phpstan/phpstan",
@@ -3724,23 +3728,25 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-03-22T17:22:38+00:00"
+            "time": "2026-03-22T17:22:38+00:00",
+            "published-time": "2026-03-22T17:24:47+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "4.0.1",
+            "version": "4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "0525c73950de35ded110cffafb9892946d7771b5"
+                "reference": "bbdc3d0532623e21838b7041a4364383a8126f96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/0525c73950de35ded110cffafb9892946d7771b5",
-                "reference": "0525c73950de35ded110cffafb9892946d7771b5",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/bbdc3d0532623e21838b7041a4364383a8126f96",
+                "reference": "bbdc3d0532623e21838b7041a4364383a8126f96",
                 "shasum": ""
             },
             "require": {
+                "ext-libxml": "*",
                 "ext-simplexml": "*",
                 "ext-tokenizer": "*",
                 "ext-xmlwriter": "*",
@@ -3748,6 +3754,10 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.4.0 || ^9.3.4 || ^10.5.32 || 11.3.3 - 11.5.28 || ^11.5.31"
+            },
+            "suggest": {
+                "ext-iconv": "For accurate character length calculation when the checked files contain multi-byte characters.",
+                "ext-pcntl": "For parallel processing support via the --parallel CLI option."
             },
             "bin": [
                 "bin/phpcbf",
@@ -3803,7 +3813,8 @@
                     "type": "thanks_dev"
                 }
             ],
-            "time": "2025-11-10T16:43:36+00:00"
+            "time": "2026-08-06T02:45:27+00:00",
+            "published-time": "2026-08-06T02:57:35+00:00"
         },
         {
             "name": "staabm/side-effects-detector",
@@ -5074,5 +5085,5 @@
         "php": "~8.4.0 || ~8.5.0"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.11.0"
 }
